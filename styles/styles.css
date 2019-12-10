@@ -1,0 +1,126 @@
+/* Global Style */
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #4A4A4A;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  font-size: 1em;
+}
+
+/* Header Styles */
+
+header {
+  background: #E2E2E2;
+  padding: 30px 0;
+}
+
+header h1 {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+header p {
+  color: #727671;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  background: #fff;
+  margin: 6px 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.profile-image {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+/* Section Portfolio Styles */
+
+.portfolio {
+  padding: 40px 0 20px;
+}
+
+.portfolio img {
+  width: 100%;
+}
+
+.portfolio li {
+  margin-bottom: 70px;
+}
+
+.portfolio h3 {
+  font-weight: normal;
+}
+
+/* Footer Styles */
+
+footer {
+  background: #E2E2E2;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+footer h2 {
+  margin-bottom: 40px;
+}
+
+footer p {
+  color: #727671;
+}
+
+.add-bottom-margin {
+  margin-bottom: 25px;
+}
+
+footer span {
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+.footer-line {
+  border-top: 1px solid #A5A9A4;
+  margin-top: 40px;
+}
+
+.footer-line h3 {
+  float: left;
+  font-size: 1em;
+}
+
+.footer-line p {
+  float: right;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4A4A4A;
+}
+
+.clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+}
