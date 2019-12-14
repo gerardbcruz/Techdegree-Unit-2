@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Merriweather", sans-serif;
   color: #4A4A4A;
   text-align: center;
   line-height: 1.6em;
@@ -23,22 +23,37 @@ h2 {
   font-size: 1em;
 }
 
+a {
+  text-decoration: none;
+  color: #4A4A4A;
+}
+
+a:hover {
+  color: #ffd800;
+}
+
+h1, h2, h3, a, span {
+  font-family: "Lato", serif;
+  font-weight: 900;
+}
+
 /* Header Styles */
 
 header {
-  background: #E2E2E2;
+  background: #6fb98f;
   padding: 30px 0;
+  color: #ededed;
 }
 
 header h1 {
-  font-weight: 700;
   margin-top: 0;
   margin-bottom: 40px;
   font-size: 2em;
 }
 
 header p {
-  color: #727671;
+  /* color: #727671; */
+  color: #ededed;
 }
 
 ul {
@@ -47,11 +62,15 @@ ul {
 }
 
 nav ul li {
-  background: #fff;
+  background: #004445;
   margin: 6px 0;
-  padding: 10px 0;
   text-transform: uppercase;
-  font-weight: 700;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 0;
+  color: #ededed;
 }
 
 .profile-image {
@@ -62,23 +81,37 @@ nav ul li {
 
 /* Portfolio Styles */
 
-.portfolio {
-  padding: 40px 0 20px;
+main {
+  padding: 40px 0;
 }
 
-.portfolio img {
+#portfolio img {
   width: 100%;
 }
 
-.portfolio li {
+#portfolio li {
   margin-bottom: 70px;
 }
 
-.portfolio h3 {
-  font-weight: normal;
+/* Skills Styles */
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* Footer Styles */
+#skills ul li {
+  /* flex-grow: 1; */
+  background: #2c7873;
+  padding: 10px 20px;
+  margin: 0 10px 30px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* Footer/Contact Styles */
 
 footer {
   background: #E2E2E2;
@@ -100,7 +133,6 @@ footer p {
 
 footer span {
   margin-left: 20px;
-  font-weight: 700;
 }
 
 .footer-line {
@@ -116,8 +148,25 @@ footer span {
 .footer-line p {
   float: right;
   text-transform: uppercase;
-  font-weight: 700;
   color: #4A4A4A;
+}
+
+.bottom-nav {
+  float: right;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  display: none;
+  font-size: .95rem;
+}
+
+.bottom-nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.bottom-nav a:hover,
+.footer-line a:hover {
+  color: #2c7873;
 }
 
 .clearfix:after {
@@ -173,9 +222,20 @@ footer span {
     flex-basis: 49%;
   }
 
+  /* Footer/Contact Styles */
+
+  .footer-line p {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: block;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
+
   /* Header Styles */
   header h1 {
     float: left;
@@ -199,7 +259,6 @@ footer span {
   /* Portfolio Styles */
 
   .portfolio-item {
-    /* flex-grow: 1; */
     flex-basis: 32%;
   }
 

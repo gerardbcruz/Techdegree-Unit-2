@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900%7cMerriweather&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -14,18 +15,20 @@
     <nav class="container clearfix">
       <h1>Gerard Cruz</h1>
       <ul>
-        <li>Home</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <section class="header-info container clearfix">
+    <div class="header-info container clearfix">
       <img class="profile-image" src="images/responsive-layout-profile.png" alt="profile image">
       <p>Hi, my name is Gerard and I am a Front End Developer with a background in IT. My passion is in creating clean, engaging, and user-centric design. I enjoy working on meaningful projects that involve UI/UX design, web design, and front end development.</p>
-    </section>
+    </div>
   </header>
 
-  <main class="portfolio container">
+  <main class="container">
+    <section id="portfolio">
       <h2>Portfolio</h2>
       <ul class="portfolio-flex">
         <li class="portfolio-item">
@@ -59,9 +62,21 @@
           <p>Someon can enter in the numbers they want, and press the big blue button and get the result. </p>
         </li>
       </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Sketch</li>
+          <li>Photoshop</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+        </ul>
+      </section>
   </main>
 
-  <footer>
+  <footer id="contact">
     <section class="container">
       <h2>Contact</h2>
       <p class="add-bottom-margin">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
@@ -69,7 +84,13 @@
       <p>Email <span>email@yoursite.com</span></p>
       <div class="footer-line clearfix">
         <h3>Gerard Cruz</h3>
-        <p>Back to Top</p>
+        <p><a href="#">Back to Top</a></p>
+        <ul class="bottom-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </section>
   </footer>
