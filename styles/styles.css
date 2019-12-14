@@ -34,6 +34,7 @@ header h1 {
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 40px;
+  font-size: 2em;
 }
 
 header p {
@@ -59,7 +60,7 @@ nav ul li {
   width: 70%;
 }
 
-/* Section Portfolio Styles */
+/* Portfolio Styles */
 
 .portfolio {
   padding: 40px 0 20px;
@@ -123,4 +124,83 @@ footer span {
    content: "";
    display: table;
    clear: both;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+
+  /* Header Styles */
+  nav ul {
+    display: inline-block;
+    margin: 0;
+  }
+  nav ul li {
+    float: left;
+    background: none;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .header-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .profile-image {
+    width: 37%;
+    float: right;
+    margin: 0;
+  }
+
+  .header-info p {
+    width: 61.5%;
+    float: left;
+    margin: 0;
+    padding-right: 1.5%;
+    font-size: 1.2em;
+  }
+
+  /* Portfolio Styles */
+
+  .portfolio-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio-item {
+    flex-basis: 49%;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  /* Header Styles */
+  header h1 {
+    float: left;
+    padding-top: 15px;
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+  }
+
+  nav ul {
+    float: right;
+  }
+
+  nav ul li {
+    margin-right: 0;
+  }
+
+  .header-info p {
+    text-align: left;
+  }
+
+  /* Portfolio Styles */
+
+  .portfolio-item {
+    /* flex-grow: 1; */
+    flex-basis: 32%;
+  }
+
 }
